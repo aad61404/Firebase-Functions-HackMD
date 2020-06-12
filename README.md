@@ -29,7 +29,7 @@ slideOptions:
 
 ----
 
-## 如何使用 
+## 使用步驟
 
 |  |   |   |
 | -------- | -------- | -------- |
@@ -131,6 +131,10 @@ slideOptions:
 4. 函數將縮略圖上傳回Cloud Storage 中的新位置。
 5. 應用下載縮略圖鏈接。
 
+<p>
+按下↓ 看更多內容
+</p>
+
 ----
 
 <!-- .slide: data-background="#1A237E" -->
@@ -151,12 +155,20 @@ slideOptions:
 
 Cloud Functions 可以通過調用和提供網絡API 來幫助您的應用更好地與其他服務配合工作。例如，一款開發協作應用可以將GitHub 提交發佈到工作組聊天室。
 
+<p>
+按下↓ 看更多內容
+</p>
+
 ----
 
 ![](https://i.imgur.com/5uygmFd.png =70%x)
 1. 用戶將提交推送到GitHub存儲庫。
 2. HTTPS函數通過GitHub webhook API觸發。
 3. 該函數將提交的通知發送到團隊鬆弛通道。
+
+<p>
+按下↓ 看更多內容
+</p>
 
 ----
 
@@ -172,11 +184,11 @@ Cloud Functions 可以通過調用和提供網絡API 來幫助您的應用更好
 
 ---
 
-## 如何使用
+## codelab 範例
 
 ---
 
-#### 如何使用
+#### codelab範例
 [官方codelab ](https://codelabs.developers.google.com/codelabs/firebase-cloud-functions/#0)
 
 
@@ -195,10 +207,19 @@ Then select your Project ID and follow the instructions. When prompted, you can 
 
 ## Triggers
 ![](https://i.imgur.com/uiTDh8u.png)
+<p>
+按下↓ 看更多內容
+</p>
 
 ----
 
+
+## 
 ![](https://i.imgur.com/lWus9qK.png)
+
+<p>
+按下↓ 看更多內容
+</p>
 
 ----
 
@@ -218,17 +239,42 @@ exports.randomNumber = functions.https.onRequest((request, response) => {
 })
 ```
 
+<p>
+按下↓ 看更多內容
+</p>
 
 ----
 
+#### 別忘了在terminal 執行
+
+``` javascript
+firebase deploy --only functions
+```
+
+#### 若無法正常執行
+
+
+- 可以嘗試重新 firebase init 
+- 需要加入 firebase Funcitons
+- 需要注意資料夾位置 預設(public) , 我是用 . (根目錄) 可自由決定
+- 注意 index 不要覆蓋
+<p>
+按下↓ 看更多內容
+</p>
+
+----
+
+#### 貼上functions 裡面url 網址
 ![](https://i.imgur.com/5omAgAz.png)
+<p>
+按下↓ 看更多內容
+</p>
 
 ----
 
 ![](https://i.imgur.com/JGYYyPQ.png)
 
 
----
 
 
 
