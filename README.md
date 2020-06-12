@@ -218,10 +218,18 @@ exports.randomNumber = functions.https.onRequest((request, response) => {
 })
 ```
 
-https://us-central1-home-webnotification.cloudfunctions.net/helloWorld
-https://us-central1-home-webnotification.cloudfunctions.net/randomNumber
 
 ----
+
 ![](https://i.imgur.com/5omAgAz.png)
 
+----
+
+![](https://i.imgur.com/JGYYyPQ.png)
+
+
 ---
+
+
+
+
